@@ -8,6 +8,7 @@ export const StyledLogo = styled.div`
   font-family: "Star jedi";
   color: #fff;
   text-align: center;
+  text-decoration: underline;
   cursor: pointer;
 `;
 
@@ -204,27 +205,41 @@ export const StyledWelcomeContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: fit-content;
+  margin-top: 70px;
 `;
 export const StyledWelcomeTittle = styled.p`
   font-family: "Star jedi", sans-serif;
   font-size: 3rem;
   color: white;
+  text-decoration: underline;
+  cursor: pointer;
 `;
 export const StyledButtonWelcome = styled.button`
   font-family: "Star jedi", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  width: 130px;
+  height: 50px;
   color: white;
-  border: none;
+  border-radius: 50px;
+
+  cursor: pointer;
   background: none;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 10px 2px rgba(252, 251, 166, 1);
+  }
 `;
 export const StyledWelcomeText = styled.p`
   font-family: "Biko", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: white;
   width: 600px;
   margin-bottom: 40px;
+  text-align: justify;
   color: yellow;
 
   transform-origin: 50%;
